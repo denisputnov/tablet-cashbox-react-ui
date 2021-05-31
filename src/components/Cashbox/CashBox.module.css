@@ -1,0 +1,51 @@
+.CashBox {
+  width: 100%;
+  height: 92vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  
+}
+.CashBoxContent {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 10px;
+  padding: 10px;
+  grid-auto-rows: calc((66.7vw / 4) - 10px);
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.CartSum {
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 2px 2px 15px 5px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  background-color: white;
+  overflow-y: scroll;
+  padding: 20px;
+  padding-bottom: 100px;
+  /* position: relative; */
+}
+.MakeOrder {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  /* transform: translateX(-50%); */
+  width: calc(33.3% - 60px);
+  height: 60px;
+  border-radius: 20px;
+  border: 2px solid rgb(25, 167, 32);
+  background-color: rgb(41, 165, 93);
+  color: white;
+  font-weight: bold;
+  font-size: calc(10px + 0.5vw);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.MakeOrder:disabled {
+  background-color: #c5c5c5;
+  border: 2px solid #acacac;
+}

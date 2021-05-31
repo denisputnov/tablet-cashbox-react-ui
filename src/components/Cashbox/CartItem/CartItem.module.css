@@ -1,0 +1,138 @@
+.CartItem {
+  position: relative;
+  border: 2px solid #e6e6e6;
+  border-radius: 10px;
+  height: 80px;
+  overflow: hidden;
+  margin: 20px 0;
+  box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+.CartItem:first-child {
+  margin-top: 0;
+}
+.CartItem:last-child {
+  margin-bottom: 0;
+}
+
+.ItemControls {
+  position: absolute;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 2fr 2fr 5fr;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+  opacity: 0.9;
+  border-radius: 8px;
+  background-color: #e6e6e6;
+}
+.Decrement,
+.Delete,
+.Increment,
+.Close {
+  display: block;
+  position: relative;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+.Decrement::after,
+.Increment::after,
+.Delete::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.4;
+}
+
+.Decrement {
+  background-image: linear-gradient(-135deg, #ffc579 0%, #ffae43 100%);
+}
+
+
+.Decrement::after {
+  background: no-repeat center url(./minus.svg);
+  background-size: 80% 80%;
+}
+
+.Delete {
+  background-image: linear-gradient(-135deg, #ff4949 0%, #ca332e 100%);
+}
+.Delete::after {
+  background: no-repeat center url(./delete.svg);
+  background-size: 80% 80%;
+}
+
+.Increment {
+  background-image: linear-gradient(-135deg, #a3ff47 0%, rgb(106, 209, 32) 100%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.Increment::after {
+  background: no-repeat center url(./plus.svg);
+  background-size: 80% 80%;
+}
+
+.Close {
+  font-size: calc(12px + 0.8vw);
+  font-weight: bold;
+}
+
+.ItemInfo {
+  position: absolute;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 2fr 2fr;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  background: white;
+  border: none;
+  align-items: unset;
+  text-align: unset;
+  /* max-width: 60%; */
+}
+.ItemInfo div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* max-width: 60%; */
+}
+
+.ItemName {
+  display: -webkit-box;
+  width: 100%;
+  font-size: calc(10px + 0.6vw);
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ItemPrice {
+  font-size: calc(8px + 0.6vw);
+}
+
+.Sum {
+  font-weight: bold;
+  align-self: flex-end;
+  font-size: calc(8px + 0.6vw);
+}
+
+.Count {
+  align-self: flex-end;
+  font-size: calc(6px + 0.8vw);
+}

@@ -1,0 +1,7 @@
+.EmptyCart {
+  position: absolute;
+  top: 50%;
+  right: calc(33.3% / 2 );
+  transform: translate(50%, -100%);
+  color: #c5c5c5;
+}
