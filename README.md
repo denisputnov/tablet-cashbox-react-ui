@@ -17,6 +17,13 @@ yarn start
 I used `yarn` packet manager. If you want to start this project via `npm` just Google how you can do it.
 
 ### How does it look like? 
-[firstPicture]: https://ibb.co/4ZzTmbC
-[secondPicture]: https://ibb.co/88NWnvV
-[thirdPicture]: https://ibb.co/4jVS6C7
+![Summary interface](https://i.ibb.co/0jTMD01/2021-05-31-16-56-14.png)
+![In folder interface](https://i.ibb.co/x5XpK9Q/2021-05-31-16-56-31.png)
+![Cart interface](https://i.ibb.co/rZwpCqm/2021-05-31-16-56-44.png)
+
+### Find me here:
+* [Вконтакте](https://vk.com/grnbows) </br>
+* [Instagram](https://www.instagram.com/grnbows) </br>
+* [Twitter](https://twitter.com/grnbows) </br>
+
+<i>With respect and love,</i></br> by grnbows
